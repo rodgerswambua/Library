@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sample_main_layout">
+
+    <ViewAnimator
+          android:id="@+id/sample_output"
+          android:layout_width="match_parent"
+          android:layout_height="0px"
+          android:background="@color/cardview_shadow_end_color"
+          android:layout_weight="1">
+
+        <ScrollView
+              style="@style/Widget.SampleMessageTile"
+              android:layout_width="match_parent"
+            android:background="@color/cardview_shadow_end_color"
+              android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@color/cardview_shadow_end_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blue"/>
+        </ScrollView>
+
+        <fragment
+              android:name="com.rodgermajor.androidgeek.common.logger.mLogFragment"
+              android:id="@+id/log_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+    </ViewAnimator>
+
+    <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@android:color/darker_gray" />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/adView"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7570294913205994/1585180425">
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+    <FrameLayout
+          android:id="@+id/sample_content_fragment"
+          android:layout_weight="2"
+          android:layout_width="match_parent"
+          android:layout_height="0px" />
+
+</LinearLayout>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/secure_connect_scan"
+        android:title="@string/secure_connect"
+        android:icon="@drawable/ic_action_device_access_bluetooth_searching"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/discoverable"
+        android:title="@string/discoverable"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/share"
+        android:title="Share App"
+        app:showAsAction="never" />
+
+</menu>
